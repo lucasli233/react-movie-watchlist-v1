@@ -4,7 +4,7 @@ import { Header } from "./components/Header";
 import { Watched } from "./components/Watched";
 import { Watchlist } from "./components/Watchlist";
 import { Add } from "./components/Add";
-import { BiTrash, BiEdit } from "react-icons/bi";
+// import { BiTrash, BiEdit } from "react-icons/bi";
 
 import "./App.css";
 
@@ -12,6 +12,7 @@ function App() {
   return (
     <Router>
       <Header />
+      
       <Switch>
         <Router exact path="/">
           <Watchlist />
