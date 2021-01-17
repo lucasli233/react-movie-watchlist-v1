@@ -12,17 +12,17 @@ function App() {
   return (
     <Router>
       <Header />
-      
+
       <Switch>
         <Router exact path="/">
           <Watchlist />
         </Router>
 
-        <Router exact path="/watched">
+        <Router path="/watched">
           <Watched />
         </Router>
 
-        <Router exact path="/add">
+        <Router path="/add">
           <Add />
         </Router>
       </Switch>
