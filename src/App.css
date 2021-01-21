@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
 
 :root {
-  --primary: #032541;
-  --secondary: #21d07a;
-  --white: #fff;
+  --primary: #012F47;
+  --secondary: #019FE9;
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -85,7 +84,7 @@ header .inner-content {
 }
 
 header a {
-  color: var(--white);
+  color: white;
   font-size: 1.25rem;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -130,7 +129,7 @@ header .nav-links li:last-child {
   padding: 10px;
   border-radius: 5px;
   border: none;
-  color: var(--white);
+  color: white;
   font-size: 1.25rem;
 }
 
@@ -173,7 +172,7 @@ header .nav-links li:last-child {
   margin: 0;
 }
 
-.result-card .info .release-date {
+.result-card .info .releaseDate {
   font-size: 1.25rem;
   font-weight: 300;
   color: var(--primary);

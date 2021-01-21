@@ -8,25 +8,29 @@ import { Add } from "./components/Add";
 
 import "./App.css";
 
+import { GlobalProvider } from "./context/GlobalState";
+
 function App() {
   return (
-    <Router>
-      <Header />
+    <GlobalProvider>
+      <Router>
+        <Header />
 
-      <Switch>
-        <Router exact path="/">
-          <Watchlist />
-        </Router>
+        <Switch>
+          <Router exact path="/">
+            <Watchlist />
+          </Router>
 
-        <Router path="/watched">
-          <Watched />
-        </Router>
+          <Router path="/watched">
+            <Watched />
+          </Router>
 
-        <Router path="/add">
-          <Add />
-        </Router>
-      </Switch>
-    </Router>
+          <Router path="/add">
+            <Add />
+          </Router>
+        </Switch>
+      </Router>
+    </GlobalProvider>
   );
 }
 
