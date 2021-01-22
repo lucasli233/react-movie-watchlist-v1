@@ -1,0 +1,43 @@
+.navBar {
+  background-color: var(--darkblue);
+}
+
+.innerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.navBar a {
+  color: white;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navBar a:hover {
+  opacity: 0.7;
+}
+
+.brand a {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navLinks {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navLinks li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.navLinks li:last-child {
+  margin-right: 0;
+}

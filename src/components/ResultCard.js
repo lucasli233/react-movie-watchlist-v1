@@ -1,38 +1,38 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
+import s from "./ResultCard.module.css";
 
 export const ResultCard = ({ movie }) => {
-  
   const { addMovieToWatchList, watchlist } = useContext(GlobalContext);
 
   // prevent from adding same movie to watchlist more than once
   let storedMovie = watchlist.find((o) => o.id === movie.id);
   const watchlistDisabled = storedMovie ? true : false;
-
+  // {s.}
   return (
-    <div className="result-card">
-      <div className="poster-wrapper">
+    <div className={s.resultCard}>
+      <div className={s.posterWrapper}>
         {movie.poster_path ? (
           <img
             src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
             alt={`${movie.title} Poster`}
           />
         ) : (
-          <div className="filter-poster"></div>
+          <div className={s.fillerPoster}></div>
         )}
       </div>
 
-      <div className="info">
-        <div className="header">
-          <h3 className="title">{movie.title}</h3>
-          <h4 className="releaseDate">
+      <div className={s.info}>
+        <div>
+          <h3 className={s.title}>{movie.title}</h3>
+          <h4 className={s.releaseDate}>
             {movie.release_date ? movie.release_date.substring(0, 4) : "-"}
           </h4>
         </div>
- 
-        <div className="controls">
+
+        <div className={s.controls}>
           <button
-            className="btn"
+            className={s.btn}
             disabled={watchlistDisabled}
             onClick={() => addMovieToWatchList(movie)}
           >

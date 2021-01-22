@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ResultCard } from "./ResultCard";
+import s from "./Add.module.css";
 
 //rafc
 export const Add = () => {
@@ -26,8 +27,8 @@ export const Add = () => {
   return (
     <div className="add-page">
       <div className="container">
-        <div className="add-content">
-          <div className="input-wrapper">
+        <div className={s.addContent}>
+          <div className={s.inputWrapper}>
             <input
               type="text"
               placeholder="Search for a movie"

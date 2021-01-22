@@ -1,0 +1,64 @@
+.resultCard {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.posterWrapper img,
+.fillerPoster {
+  width: 75px;
+  height: 113px;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin-right: 15px;
+  display: block;
+  color: transparent;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.25rem;
+  color: var(--darkblue);
+  font-weight: 600;
+  margin: 0;
+}
+
+.releaseDate {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--darkblue);
+  margin: 0;
+}
+
+.controls button {
+  margin-right: 10px;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: var(--lightblue);
+  color: var(--darkblue);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  border: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  line-height: 1.1;
+}
+
+.btn:hover {
+  background-color: #1aa762;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
