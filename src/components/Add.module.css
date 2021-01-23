@@ -1,11 +1,11 @@
 .addPage {
-  padding: 30px 0;
+  padding: 90px 0 0 0;
   background-color: var(--lightgrey);
-  padding-bottom: 80vh;
+  min-height: 100vh;
 }
 
 .addContent {
-  padding: 50px 0;
+  /* padding: 30px 0 0 0; */
   max-width: 600px;
   margin: 0 auto;
 }
@@ -21,14 +21,14 @@ input:focus {
   padding: 10px;
   border-radius: 5px;
   border: none;
-  color: white;
+  color: var(--darkblue);
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .inputWrapper input::placeholder {
-  color: black;
-  font-weight: 700;
+  color: var(--darkblue);
+  font-weight: 600;
 }
 
 .results {

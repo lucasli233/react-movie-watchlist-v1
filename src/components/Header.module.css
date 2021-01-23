@@ -2,6 +2,9 @@
 
 .navBar {
   background-color: var(--darkgrey);
+  height: 60px;
+  width: 100%;
+  position: fixed;
 }
 
 .innerContent {
