@@ -3,7 +3,7 @@
 * {
   --darkblue: #012f47;
   --lightblue: #019fe9;
-  --lightgrey: #2a2a30;
+  --lightgrey: #232329;
   --darkgrey: #17171a;
   font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
@@ -53,6 +53,7 @@
 h1 {
   color: var(--lightblue);
   margin: 0;
+  font-size: 1.7rem;
 }
 
 /* MovieCard */
@@ -142,5 +143,6 @@ h1 {
 .noMovies {
   color: rgb(189, 189, 189);
   font-size: 2rem;
+  margin-top: 20%;
   text-align: center;
 }

@@ -10,7 +10,7 @@ export const Watched = () => {
     <div className="moviePage">
       <div className="container">
         <div className="pageHeader">
-          <h1 className="heading">Watched Movies</h1>
+          <h1>Watched Movies</h1>
           <span className="count">
             {watched.length} {watched.length == 1 ? 'Movie' : 'Movies'}
           </span>
@@ -23,7 +23,7 @@ export const Watched = () => {
             ))}
           </div>
         ) : (
-          <h2 className="noMovies">No movies in your watched, go add some!</h2>
+          <h2 className="noMovies">No movies in your watched list, go add some!</h2>
         )}
       </div>
     </div>
