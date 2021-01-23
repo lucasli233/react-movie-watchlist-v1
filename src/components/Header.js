@@ -10,20 +10,24 @@ export const Header = () => {
       <header className={s.navBar}>
         <div className="container">
           <div className={s.innerContent}>
-            <div className={s.brand}>
-              <Link to="/">Movie Watch List</Link>
-            </div>
+            <Link to="/" className={s.brand}>
+              Movie Watch List
+            </Link>
             <ul className={s.navLinks}>
               <li>
-                <Link to="/">Watch List</Link>
+                <Link to="/" className={s.button1}>
+                  Watch List
+                </Link>
               </li>
 
               <li>
-                <Link to="/watched">Watched</Link>
+                <Link to="/watched" className={s.button1}>
+                  Watched
+                </Link>
               </li>
 
               <li>
-                <Link to="/add" className="navButton">
+                <Link to="/add" className={s.button1}>
                   Add
                 </Link>
               </li>

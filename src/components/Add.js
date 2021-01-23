@@ -6,11 +6,10 @@ import s from "./Add.module.css";
 export const Add = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
+
   const onChange = (e) => {
     e.preventDefault();
-
     setQuery(e.target.value);
-
     fetch(
       `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1&include_adult=false&query=${e.target.value}`
     )
@@ -24,8 +23,18 @@ export const Add = () => {
       });
   };
 
+  // const onChange2 = async (e) => {
+  //   e.preventDefault();
+  //   setQuery(e.target.value);]
+  //   const res = await fetch(
+  //     `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1&include_adult=false&query=${e.target.value}`
+  //   );
+  //   const  = await res.json();
+
+  // }
+
   return (
-    <div className="add-page">
+    <div className={s.addPage}>
       <div className="container">
         <div className={s.addContent}>
           <div className={s.inputWrapper}>
@@ -38,7 +47,7 @@ export const Add = () => {
           </div>
 
           {results.length > 0 && (
-            <ul className="results">
+            <ul className={s.results}>
               {results.map((movie) => (
                 <li key={movie.id}>
                   <ResultCard movie={movie} />

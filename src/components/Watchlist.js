@@ -7,10 +7,10 @@ export const Watchlist = () => {
   const { watchlist } = useContext(GlobalContext);
 
   return (
-    <div className={s.moviePage}>
+    <div className="moviePage">
       <div className="container">
         <div className={s.header}>
-          <div className={s.heading}>My Watchlist</div>
+          <h1 className={s.heading}>My Watchlist</h1>
         </div>
 
         {watchlist.length > 0 ? (
