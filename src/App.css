@@ -7,17 +7,11 @@
   --darkgrey: #17171a;
   font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
-  /* background-color: var(--lightgrey); */
 }
-
-/* .root {
-  padding: 0;
-  margin: 0;
-} */
 
 .moviePage {
   padding: 30px 0;
-  height: 100vh;
+  height: 95vh;
   background-color: var(--lightgrey);
 }
 
@@ -44,6 +38,12 @@
   }
 }
 
+@media (min-width: 1800px) {
+  .container {
+    width: 1500px;
+  }
+}
+
 *,
 *:before,
 *:after {
@@ -54,6 +54,8 @@ h1 {
   color: var(--lightblue);
   margin: 0;
 }
+
+/* MovieCard */
 
 .movieCard {
   width: 100%;
@@ -98,4 +100,47 @@ h1 {
 .movieCard:hover .innerCardControls {
   opacity: 1;
   transition: all 0.25s ease;
+}
+
+/* Watched Watchlist */
+
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.count {
+  display: block;
+  padding: 5px 15px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 1000px;
+  background-color: var(--lightblue);
+  color: var(--darkblue);
+}
+
+.movieGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+@media (min-width: 992px) {
+  .movieGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1800px) {
+  .movieGrid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+.noMovies {
+  color: rgb(189, 189, 189);
+  font-size: 2rem;
+  text-align: center;
 }

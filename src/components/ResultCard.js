@@ -3,11 +3,18 @@ import { GlobalContext } from "../context/GlobalState";
 import s from "./ResultCard.module.css";
 
 export const ResultCard = ({ movie }) => {
-  const { addMovieToWatchList, watchlist } = useContext(GlobalContext);
+  const {
+    addMovieToWatchlist,
+    addMovieToWatched,
+    watchlist,
+    watched,
+  } = useContext(GlobalContext);
 
   // prevent from adding same movie to watchlist more than once
   let storedMovie = watchlist.find((o) => o.id === movie.id);
-  const watchlistDisabled = storedMovie ? true : false;
+  let watchedMovie = watched.find((o) => o.id === movie.id);
+  const watchlistDisabled = storedMovie || watchedMovie ? true : false;
+  const watchedDisabled = watchedMovie ? true : false;
   // {s.}
   return (
     <div className={s.resultCard}>
@@ -34,9 +41,17 @@ export const ResultCard = ({ movie }) => {
           <button
             className={s.btn}
             disabled={watchlistDisabled}
-            onClick={() => addMovieToWatchList(movie)}
+            onClick={() => addMovieToWatchlist(movie)}
           >
             Add to Watchlist
+          </button>
+
+          <button
+            className={s.btn}
+            disabled={watchedDisabled}
+            onClick={() => addMovieToWatched(movie)}
+          >
+            Add to Watched
           </button>
         </div>
       </div>

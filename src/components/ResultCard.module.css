@@ -41,7 +41,7 @@
 .btn {
   padding: 10px 15px;
   background-color: var(--lightblue);
-  color: var(--darkblue);
+  color: black;
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: 700;
@@ -53,13 +53,15 @@
 }
 
 .btn:hover {
-  background-color: var(--darkblue);
-  color: white;
-  opacity: 1;
+  /* background-color: var(--darkblue); */
+
+  /* color: white; */
+  opacity: 0.5;
   cursor: pointer;
 }
 
 .btn:disabled {
   pointer-events: none;
   opacity: 0.5;
+  /* color: white; */
 }
