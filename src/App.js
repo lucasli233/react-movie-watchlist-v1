@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Header } from "./components/Header";
+import { Nav } from "./components/Nav";
 import { Watched } from "./components/Watched";
 import { Watchlist } from "./components/Watchlist";
 import { Add } from "./components/Add";
@@ -14,7 +14,7 @@ function App() {
   return (
     <GlobalProvider>
       <Router>
-        <Header />
+        <Nav />
 
         <Switch>
           <Router exact path="/">

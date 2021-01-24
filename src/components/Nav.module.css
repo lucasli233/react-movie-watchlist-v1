@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 
-.navBar {
+header {
   background-color: var(--darkgrey);
+  z-index: 99;
   height: 60px;
   width: 100%;
   position: fixed;
+  overflow: hidden;
 }
 
 .innerContent {

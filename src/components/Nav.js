@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import s from "./Header.module.css";
+import s from "./Nav.module.css";
 
 //rafc
-export const Header = () => {
+export const Nav = () => {
   return (
     <div>
       {/* {s.} */}
-      <header className={s.navBar}>
+      <header>
         <div className="container">
           <div className={s.innerContent}>
             <Link to="/" className={s.brand}>
