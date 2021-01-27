@@ -121,7 +121,7 @@ h1 {
   font-size: 1.125rem;
   font-weight: 600;
   border-radius: 1000px;
-  background-color: var(--lightblue);
+  background-color: var(--lightblue); 
   color: var(--darkblue);
 }
 
