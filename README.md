@@ -1,5 +1,8 @@
 https://lucasli233.github.io/react-movie-watchlist-v1/
 
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
