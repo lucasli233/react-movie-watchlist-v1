@@ -15,19 +15,18 @@ function App() {
     <GlobalProvider>
       <Router>
         <Nav />
-
         <Switch>
-          <Router exact path="/">
-            <Watchlist />
-          </Router>
-
-          <Router path="/watched">
+          <Route path="/watched">
             <Watched />
-          </Router>
+          </Route>
 
-          <Router path="/add">
+          <Route path="/add">
             <Add />
-          </Router>
+          </Route>
+
+          <Route path="/">
+            <Watchlist />
+          </Route>
         </Switch>
       </Router>
     </GlobalProvider>
