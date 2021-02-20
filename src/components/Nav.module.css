@@ -32,7 +32,7 @@ header {
   font-weight: 700;
   text-decoration: none;
   font-size: 1.6rem;
-  font-family: "Kaushan Script", cursive;
+  /* font-family: "Kaushan Script", cursive; */
   color: var(--lightblue);
 }
 
@@ -42,7 +42,7 @@ header {
   transition: all 0.3s ease;
   color: var(--lightblue);
   padding: 10px 15px;
-  font-family: "Kaushan Script", cursive;
+  /* font-family: "Kaushan Script", cursive; */
 }
 
 .navButton:hover {
